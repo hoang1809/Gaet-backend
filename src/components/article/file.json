@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_article_files",
+  "info": {
+    "displayName": "File"
+  },
+  "options": {},
+  "attributes": {
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
