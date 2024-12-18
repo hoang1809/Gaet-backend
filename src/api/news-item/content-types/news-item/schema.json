@@ -4,7 +4,8 @@
   "info": {
     "singularName": "news-item",
     "pluralName": "news",
-    "displayName": "News"
+    "displayName": "News",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,13 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "mappedBy": "news"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

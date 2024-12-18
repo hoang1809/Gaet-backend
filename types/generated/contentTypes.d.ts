@@ -437,6 +437,7 @@ export interface ApiImageImage extends Struct.CollectionTypeSchema {
 export interface ApiNewsItemNewsItem extends Struct.CollectionTypeSchema {
   collectionName: 'news';
   info: {
+    description: '';
     displayName: 'News';
     pluralName: 'news';
     singularName: 'news-item';
@@ -448,6 +449,7 @@ export interface ApiNewsItemNewsItem extends Struct.CollectionTypeSchema {
     content: Schema.Attribute.DynamicZone<
       ['article.single-image', 'article.paragraph', 'article.multiple-images']
     >;
+    cover: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
